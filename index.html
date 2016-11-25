@@ -1,0 +1,17 @@
+<html ng-app="DerpityApp">
+    <head>
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="ng.app.js"></script>
+    </head>
+    <body ng-controller="DoSomethingController">
+        Start from:<input ng-model="start" /><br />
+        Up to: <input ng-model="stop"><br />
+        <br />
+        <ul>
+            <li ng-repeat="number in numberList">
+                {{ number }}
+            </li>
+        </ul>
+    </body>
+</html>
